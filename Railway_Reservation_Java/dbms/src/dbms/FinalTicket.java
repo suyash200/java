@@ -19,7 +19,7 @@ import java.awt.Color;
 public class FinalTicket {
 
 	public JFrame frame;
-	static String u_id = "ABC";
+	static String u_id  ;
 	static int tno;
 	static String train_name;
 	static String src;
@@ -56,7 +56,7 @@ public class FinalTicket {
 		this.tno = tno;
 		this.train_name = train_name;
 		this.src = src;
-		this.dest = dest;
+		this.dest = dest; 
 		this.pnr = pnr; 
 		this.p_name = p_name;
 		this.p_gender = p_gender;
@@ -292,7 +292,7 @@ public class FinalTicket {
 			public void actionPerformed(ActionEvent e) {
 				ResultSet rs = null;
 				try{
-					Class.forName("com.mysql.jdbc.Driver");
+					Class.forName("com.mysql.jdbc.Driver"); 
 					Connection conn = DriverManager.getConnection(url,uname,password);
 					Statement st = conn.createStatement();
 					String query = "SELECT Cost FROM Train WHERE Train_no = " + tno;
@@ -300,7 +300,7 @@ public class FinalTicket {
 					rs.next();
 					fare = rs.getInt("Cost");
 					total_fare.setText(String.valueOf(fare*p_name.length));
-				}catch(Exception ex){};
+				}catch(Exception ex){ex.printStackTrace();};
 			}
 		});
 		

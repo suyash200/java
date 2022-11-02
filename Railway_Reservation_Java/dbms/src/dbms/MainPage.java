@@ -146,10 +146,10 @@ public class MainPage {
 					{
 						
 						rs.last();
-						total = rs.getRow();
+						total = rs.getRow(); 
 						rs.beforeFirst();
 						train_name = new String [total];
-						int i = 0;
+						int i = 0; 
 						while(rs.next())
 						{
 							train_name[i++] = rs.getString("Train_name");

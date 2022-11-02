@@ -34,12 +34,12 @@ public class Login_page {
 	static String uname = "root";
 	static String password = "S@w@ntw@d123";
 	/**
-	* Launch the application.
+	* Launch the application. 
 	*/
 	public static void main(String[] args) throws Exception {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
-				try {
+				try { 
 					Login_page window = new Login_page();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
@@ -145,11 +145,11 @@ public class Login_page {
 		btnSignUp.setBounds(410, 122, 142, 29);
 		frame.getContentPane().add(btnSignUp);
 		
-		JLabel trainbk = new JLabel("");
-		Image img1 = new ImageIcon(this.getClass().getResource("/trains.jpg")).getImage();
-		trainbk.setIcon(new ImageIcon(img1));
-		trainbk.setBounds(0, 0, 562, 269);
-		frame.getContentPane().add(trainbk);		
+	//	JLabel trainbk = new JLabel("");
+		//Image img1 = new ImageIcon(this.getClass().getResource("./trains.jpg")).getImage();
+		//trainbk.setIcon(new ImageIcon(img1));
+		//trainbk.setBounds(0, 0, 562, 269);
+		//frame.getContentPane().add(trainbk);		
 	}
 }
 

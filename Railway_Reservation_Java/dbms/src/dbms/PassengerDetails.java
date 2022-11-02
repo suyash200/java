@@ -101,7 +101,7 @@ public class PassengerDetails {
 		JLabel lblGender = new JLabel("Gender");
 		lblGender.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblGender.setBounds(328, 170, 62, 14);
-		frame.getContentPane().add(lblGender);
+		frame.getContentPane().add(lblGender); 
 		
 		final JComboBox comboBox = new JComboBox();
 		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -295,9 +295,9 @@ public class PassengerDetails {
 						{
 						case 0 : name = textField.getText();
 								 gender = comboBox.getSelectedItem().toString();
-								 age = (int) spinner.getValue();
+								 age = (int) spinner.getValue(); 
 								 query = "INSERT INTO Passenger (User_name,Age,p_name,Gender,Source,Destination,Train_no) values ('" + u_id + "'," + age + ",'" + name +"','"+gender+"','"+src+"','"+dest+"',"+tno+")";
-								 st.executeUpdate(query);
+								 st.executeUpdate(query); 
 								 pnr[i] = ++PNR;
 								 p_name[i] = name;
 								 p_age[i] = age;
@@ -348,7 +348,7 @@ public class PassengerDetails {
 				}catch(Exception exp){System.out.println(exp);};
 				frame.setVisible(false);
 				new FinalTicket(u_id,tno,train_name,src,dest,pnr,p_name,p_gender,p_age).frame.setVisible(true);
-			}
+			} 
 		});
 		
 		
