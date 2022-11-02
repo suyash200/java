@@ -36,7 +36,7 @@ public class SignUP {
 	private JPasswordField passwordField;
 	static String url = "jdbc:mysql://localhost:3306/railway?useSSL=false";
 	static String uname = "root";
-	static String password = "S@w@ntw@d123";
+	static String password = "S ";
 	/**
 	 * Launch the application.
 	 */
